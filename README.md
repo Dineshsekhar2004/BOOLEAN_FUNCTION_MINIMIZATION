@@ -35,16 +35,32 @@ Hardware – PCs, Cyclone II , USB flasher
 
 /* Program to implement the given logic function and to verify its operations in quartus using Verilog programming. 
 
-Developed by: RegisterNumber:*/
+Developed by:ajina joshpin
+RegisterNumber:212223230008*/
 
+```
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity booleanexp is 
+    Port ( INO1 : in STD_LOGIC;    --- OR gate input
+	        INO2 : in STD_LOGIC;    --- OR gate input
+			  OO  : out STD_LOGIC);   --- OR gate output
+end booleanexp;
+
+architecture Behavioral of booleanexp is 
+begin
+OO <= INO1 or INO2;   --- 2 input OR gate
+end Behavioral;
+```
+![Screenshot 2024-03-20 125311](https://github.com/ajinajoshpin/BOOLEAN_FUNCTION_MINIMIZATION/assets/148514578/9aaa43c1-6dea-4ada-964a-6932a40dc881)
 
 **RTL realization**
+![Screenshot 2024-03-20 130933](https://github.com/ajinajoshpin/BOOLEAN_FUNCTION_MINIMIZATION/assets/148514578/70420e12-71c5-4c16-9e5b-68107063fdaa)
 
 **Output:**
+![Screenshot 2024-03-20 125925](https://github.com/ajinajoshpin/BOOLEAN_FUNCTION_MINIMIZATION/assets/148514578/98edadfb-3ce6-4e31-96ce-5e286703df41)
 
-**RTL**
-
-**Timing Diagram**
 
 **Result:**
 
